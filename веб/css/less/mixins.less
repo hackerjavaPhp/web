@@ -1,0 +1,31 @@
+// main: style.less;
+
+.clearfix()
+{
+    &:before , 
+    &:after 
+    {
+        content: "";
+        display: table;
+    }
+    
+    &:after
+    {
+        clear:both;
+    }
+}
+
+
+.btn-modify(@bg:red, @color:white , @size:0 4px 0 #3678a3 , @tr)
+{
+    box-shadow:@size;
+    background: @bg;
+    color: @color;
+    transition: @tr;
+    
+    &:hover
+    {
+        background: darken(@bg , 10%);
+        color: darken(@color , 10%);
+    }
+}
