@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Slab:400,700|Roboto:400,900" rel="stylesheet">
     <!--My styles-->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.css" type="text/css"/>
 </head>
 <body>
     
@@ -35,19 +36,19 @@
     
     <div class = "b-container">
         <div class = "b-benefits">
-            <div class = "b-benefits_item">
+            <div class = "b-benefits_item wow bounceIn" data-wow-delay = ".5s" data-wow-duration = "2s" data-wow-iteration  = "1">
                 <h3>Pellentesque</h3>
                 <p>Nulla vitae  libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
             </div>
-            <div class = "b-benefits_item">
+            <div class = "b-benefits_item wow bounceIn" data-wow-delay = ".7s" data-wow-duration = "1s">
                 <h3>Consectetur</h3>
                 <p>Vestibulum id ligula porta  euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
             </div>
-            <div class = "b-benefits_item">
+            <div class = "b-benefits_item wow bounceIn" data-wow-delay = ".9s" data-wow-duration = ".7s">
                 <h3>Tristiquet</h3>
                 <p>Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.</p>
             </div>
-            <div class = "b-benefits_item">
+            <div class = "b-benefits_item wow bounceIn" data-wow-delay = "1.1s">
                 <h3>Fermentum</h3>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</p>
             </div>
@@ -60,19 +61,19 @@
             
             <div class = "b-works_list">
                 <div class = b-works_item_list >
-                    <img src = "img/pl_1.jpg"/>
+                    <img data-wow-delay = ".7s" class = "wow bounceIn" src = "img/pl_1.jpg" />
                     <h3>Nobis Business Card</h3>
                     <h4>Business Card, Graphic</h4>
                     <p>Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.</p>
                 </div>
                  <div class = b-works_item_list>
-                    <img src = "img/pl_2.jpg"/>
+                    <img data-wow-delay = ".8s" class = "wow bounceIn" src = "img/pl_2.jpg"/>
                     <h3>New Fun Project</h3>
                     <h4>Web Design, Application</h4>
                     <p>Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula porta felis.</p>
                 </div>
                  <div class = b-works_item_list>
-                    <img src = "img/pl_3.jpg"/>
+                    <img data-wow-delay = ".9s" class = "wow bounceIn" src = "img/pl_3.jpg"/>
                     <h3>Passionaries Branding Cover</h3>
                     <h4>Branding, Graphic Design</h4>
                     <p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.</p>
@@ -105,7 +106,7 @@
                     <h3>Get In Touch</h3>
                     <p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna. </p>
                     
-                    <ul class = "b-list b-list__contacts">
+                    <ul class = "b-list b-list__contacts wow bounceIn" data-wow-delay = ".5s">
                         <li>Moonshine Street No: 14/05 Light City, Jupiter</li> 
                         <li>0247 541 65 87</li> 
                         <li>support@longwave.com</li> 
@@ -116,7 +117,7 @@
                 <div class = "b-footer-blocks_item">
                     <h3>Twitter</h3>
                     
-                    <ul class = "b-list b-list__twitter">
+                    <ul class = "b-list b-list__twitter wow bounceIn" data-wow-delay = ".5s">
                         <li>Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</li> 
                         <li>Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</li> 
                         <li>Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</li> 
@@ -127,7 +128,7 @@
                 <div class = "b-footer-blocks_item">
                     <h3>Popular Posts</h3>
                     
-                    <ul class = "b-list b-list_popular-posts">
+                    <ul class = "b-list b-list_popular-posts wow bounceIn" data-wow-delay = ".5s">
                         <li><a href = "#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
                             <time datetime="14/11/2014">14 Nov, 2012</time>
                         </li> 
@@ -141,7 +142,7 @@
                     
                 </div>
                 
-                 <div class = "b-footer-blocks_item">
+                 <div class = "b-footer-blocks_item wow tada" data-wow-delay = ".5s">
                     <h3>About Us</h3>
                      <p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                      </p>
@@ -163,5 +164,10 @@
         </div>
         
     </div>
+    
+<!--  js scripts  -->
+    
+<script src = "js/wow.min.js"></script>
+<script src = "js/main.js"></script>
 </body>
 </html>
