@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 , p
     
     &__slider
     {
-        background:url("@{img-path}slider.jpg") center repeat-x;
+        background:#000;
     }
     
     &__footer
@@ -101,29 +101,91 @@ body
 }
 
 /*slider*/
-.b-slider:extend(.b-wrapper)
+.b-slider
 {
+    max-width: 1920px;
+    width: 100%;
     height: 600px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
     
-    h1 
+    .b-slider_headings
     {
-        color: #f3f3f3;
-        font-size: 40px;
-        font-weight: bold;
-        font-family: @roboto_s;
-        padding-top: 198px;
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+           text-align: center;
+        
+         h1 
+        {
+            color: #f3f3f3;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: @roboto_s;
+            padding-top: 198px;
+        }
+
+        h2
+        {
+            font-size: 32px;
+            color: #a8a8a8;
+            font-weight: bold;
+            font-family: @roboto_s; 
+            padding-top: 45px;
+        }
+    
     }
     
-    h2
-    {
-        font-size: 32px;
-        color: #a8a8a8;
-        font-weight: bold;
-        font-family: @roboto_s; 
-        padding-top: 45px;
-    }
+}
+
+/*Paralax*/
+
+.b-layers
+{
+    position: absolute;
+    z-index: 10;
+    left: -20px;
     
+    .layer
+    {
+        &__earth img
+        {
+            position: absolute;
+            top:360px;
+            left: 200px;
+        }
+    
+         &__comet img
+        {
+            position: absolute;
+            top:-20px;
+            left: 1190px;
+        }
+        
+          &__shuttle img
+        {
+            position: absolute;
+            top:50px;
+            left: 200px;
+            
+              
+            animation-name:shuttle;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate;
+            
+            -webkit-animation-name:shuttle;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-play-state: running;
+            -webkit-animation-direction: alternate;
+        }
+    }
 }
 
 
@@ -457,3 +519,35 @@ body
             line-height: 112px;
         }
 }
+
+
+
+
+//Animation 
+
+@keyframes shuttle
+{
+    from
+    {
+       transform: translateY(5px)
+    }
+    
+    to
+    {
+        transform: translateY(-5px)
+    }
+}
+
+@-webkit-keyframes shuttle
+{
+    from
+    {
+       transform: translateY(5px)
+    }
+    
+    to
+    {
+        transform: translateY(-5px)
+    }
+}
+

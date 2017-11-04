@@ -26,11 +26,30 @@
         </div>
     </div>
     
-    <div class = "b-container b-container__slider">
+    <div class = "b-container b-container__slider" id = "scene">
         <div class = "b-slider">
-            <h1>We are a digital & branding agency based in London.</h1>
-            <h2>We love to turn great ideas into beautiful products.</h2>
-            <a href = "#" class = "btn btn__blue">see Portfolio</a>
+            
+            <div class = "b-slider_headings">
+                <h1>We are a digital & branding agency based in London.</h1>
+                <h2>We love to turn great ideas into beautiful products.</h2>
+                <a href = "#" class = "btn btn__blue">see Portfolio</a>
+            </div>
+            
+            <div class = "b-layers">
+                <div class = "layer layer__space" data-depth = "0.10">
+                    <img src = "img/layers/slider.jpg">
+                </div>
+                <div class = "layer layer__earth" data-depth = "0.20">
+                    <img src = "img/layers/earth.png">
+                </div>
+                <div class = "layer layer__comet" data-depth = "0.30">
+                    <img src = "img/layers/comet.png">
+                </div>
+                <div class = "layer layer__shuttle" data-depth = "1">
+                    <img src = "img/layers/shuttle.png">
+                </div>
+            </div>
+            
         </div>
     </div>
     
@@ -168,6 +187,7 @@
 <!--  js scripts  -->
     
 <script src = "js/wow.min.js"></script>
+<script src = "js/parallax.min.js"></script>
 <script src = "js/main.js"></script>
 </body>
 </html>
